@@ -21,6 +21,9 @@ public class LoginTest {
 	public static void ClickOnSignin() {
 		WebElement SigninButton = driver.findElement(By.xpath("//a[text()='Sign in']"));
 		SigninButton.click(); 
+		WebElement EmailEntry = driver.findElement(By.cssSelector("input#identifierId"));
+		EmailEntry.sendKeys("jai@gmail.com");
+		
 	}
 
 }
